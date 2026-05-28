@@ -1,6 +1,10 @@
 package algorithms.search;
 
-public abstract class AState {
+import java.io.Serializable;
+
+public abstract class AState implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     String state;
     AState cameFrom;
     double cost;

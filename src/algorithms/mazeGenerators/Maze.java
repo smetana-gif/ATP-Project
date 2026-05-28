@@ -1,9 +1,13 @@
 package algorithms.mazeGenerators;
 
+import java.io.Serializable;
+
 /**
  * Represents a Maze with a grid, start position, and goal position.
  */
-public class Maze {
+public class Maze implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private int [][] Matrix;
     private Position StartPosition;
     private Position EndPosition;

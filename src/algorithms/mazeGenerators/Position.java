@@ -1,12 +1,14 @@
 package algorithms.mazeGenerators;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * Represents a specific cell position in a maze using row and column indices.
  */
-public class Position {
+public class Position implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private int row;
     private int column;
 
