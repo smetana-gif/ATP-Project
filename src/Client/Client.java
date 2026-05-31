@@ -6,13 +6,14 @@ import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
 
+// Class responsible for creating a connection with the server and executing a specific client strategy
     public class Client {
 
         private InetAddress serverIP;
         private int serverPort;
         private IClientStrategy clientStrategy;
 
-
+    // Constructor to initialize the server's IP, port, and the operating strategy.
         public Client(InetAddress serverIP, int serverPort, IClientStrategy clientStrategy) {
 
             this.serverIP = serverIP;
@@ -20,9 +21,9 @@ import java.net.Socket;
             this.clientStrategy = clientStrategy;
         }
 
-
+    // Connects to the server using a Socket, receiving the IO streams , and applying strategy
         public void communicateWithServer() {
-
+    //try-with-resources to ensure the Socket closes automatically when communication ends
             try (Socket serverSocket = new Socket(serverIP, serverPort)) {
 
 
