@@ -46,11 +46,10 @@ public class Server {
                     // Hand over the client handling to a thread from the pool
                     threadPool.execute(() -> {
                         try {
-                            // Run the chosen strategy -Supports SOLID open-closed principle (if I want the server will do
+                            // Run the chosen strategy -Supports SOLID open-closed principle - if I want the server will do
                             //something else, I just add new a class who implement the interface instead changing the code to if else statements.
                             serverStrategy.serverStrategy(clientSocket.getInputStream(), clientSocket.getOutputStream());
                             clientSocket.close();
-                            System.out.println("Finished handling client.");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
