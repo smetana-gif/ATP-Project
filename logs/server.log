@@ -1,0 +1,45 @@
+2026-06-23 14:48:46.150 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] ￗﾙￗﾕￗﾠￗﾙ 23, 2026 2:48:46 PM com.sun.javafx.application.PlatformImpl startup
+2026-06-23 14:48:46.156 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3b94d659'
+2026-06-23 14:48:46.836 [JavaFX Application Thread] INFO  - FXML URL: file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/classes/View/MyView.fxml
+2026-06-23 14:48:46.846 [Thread-3] INFO  - Server started on port 5400
+2026-06-23 14:48:46.847 [Thread-4] INFO  - Server started on port 5401
+2026-06-23 14:48:52.124 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:49791
+2026-06-23 14:48:52.140 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
+2026-06-23 15:06:43.867 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] ￗﾙￗﾕￗﾠￗﾙ 23, 2026 3:06:43 PM com.sun.javafx.application.PlatformImpl startup
+2026-06-23 15:06:43.869 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3b94d659'
+2026-06-23 15:06:44.612 [JavaFX Application Thread] INFO  - FXML URL: file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/classes/View/MyView.fxml
+2026-06-23 15:06:44.616 [Thread-3] INFO  - Server started on port 5400
+2026-06-23 15:06:44.617 [Thread-4] INFO  - Server started on port 5401
+2026-06-23 15:06:49.326 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:62551
+2026-06-23 15:06:49.338 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
+2026-06-23 15:21:37.350 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] ￗﾙￗﾕￗﾠￗﾙ 23, 2026 3:21:37 PM com.sun.javafx.application.PlatformImpl startup
+2026-06-23 15:21:37.354 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @68ceda24'
+2026-06-23 15:21:38.050 [JavaFX Application Thread] INFO  - FXML URL: file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/classes/View/MyView.fxml
+2026-06-23 15:21:38.056 [Thread-4] INFO  - Server started on port 5401
+2026-06-23 15:21:38.057 [Thread-3] INFO  - Server started on port 5400
+2026-06-23 15:21:46.423 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:50737
+2026-06-23 15:21:46.436 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
+2026-06-23 15:34:44.294 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] ￗﾙￗﾕￗﾠￗﾙ 23, 2026 3:34:44 PM com.sun.javafx.application.PlatformImpl startup
+2026-06-23 15:34:44.298 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3b94d659'
+2026-06-23 15:34:44.983 [JavaFX Application Thread] INFO  - FXML URL: file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/classes/View/MyView.fxml
+2026-06-23 15:34:44.989 [Thread-3] INFO  - Server started on port 5400
+2026-06-23 15:34:44.990 [Thread-4] INFO  - Server started on port 5401
+2026-06-23 15:34:49.240 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:51078
+2026-06-23 15:34:49.251 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
+2026-06-24 18:27:12.494 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] ￗﾙￗﾕￗﾠￗﾙ 24, 2026 6:27:12 PM com.sun.javafx.application.PlatformImpl startup
+2026-06-24 18:27:12.498 [JavaFX-Launcher] ERROR - [STACK TRACE ERROR] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3b94d659'
+2026-06-24 18:27:13.624 [JavaFX Application Thread] INFO  - FXML URL: file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/classes/View/MyView.fxml
+2026-06-24 18:27:13.631 [Thread-3] INFO  - Server started on port 5400
+2026-06-24 18:27:13.631 [Thread-4] INFO  - Server started on port 5401
+2026-06-24 18:27:27.527 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:56420
+2026-06-24 18:27:27.540 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
+2026-06-24 18:27:40.765 [Thread-4] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:56421
+2026-06-24 18:27:40.770 [pool-4-thread-1] INFO  - [SERVER EVENT] Received maze to solve.
+2026-06-24 18:27:40.772 [pool-4-thread-1] INFO  - [SERVER EVENT] Didn't saw before, Solving using Best First Search...
+2026-06-24 18:27:40.778 [pool-4-thread-1] INFO  - The solution saved to memory.
+2026-06-24 18:27:40.783 [Thread-26] INFO  - Client received solution. Steps: 22 | Start: {0,0} | End: {14,14}
+2026-06-24 18:47:15.553 [JavaFX Application Thread] INFO  - FXML URL: jar:file:/C:/Users/yoval/Desktop/%d7%9c%d7%99%d7%9e%d7%95%d7%93%d7%99%d7%9d/%d7%a9%d7%a0%d7%94%20%d7%91/%d7%a1%d7%9e%d7%a1%d7%98%d7%a8%20%d7%93/%d7%a0%d7%95%d7%a9%d7%90%d7%99%d7%9d%20%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d%20%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98/212089080_206406290_C/target/PART3-1.0-SNAPSHOT.jar!/View/MyView.fxml
+2026-06-24 18:47:15.564 [Thread-3] INFO  - Server started on port 5400
+2026-06-24 18:47:15.565 [Thread-4] INFO  - Server started on port 5401
+2026-06-24 18:47:22.333 [Thread-3] INFO  - [SERVER EVENT] Client connected from: /10.100.102.9:50073
+2026-06-24 18:47:22.352 [pool-3-thread-1] INFO  - [SERVER EVENT] Strategy: Received request for maze of size 15x15
