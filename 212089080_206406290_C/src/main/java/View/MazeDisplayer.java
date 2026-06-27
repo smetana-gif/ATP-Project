@@ -15,6 +15,10 @@ import javafx.scene.paint.Color;
 import java.util.ArrayList;
 import java.util.function.Consumer;
 
+/**
+ * This component is responsible for drawing the maze on the screen. 
+ * It extends Canvas and uses JavaFX to paint all the graphics.
+ */
 public class MazeDisplayer extends Canvas {
 
     private Maze maze;
@@ -82,6 +86,10 @@ public class MazeDisplayer extends Canvas {
     public Solution getSolution() { return solution; }
     public Maze getMaze() { return maze; }
 
+    /**
+     * Draws the background image, usually the pitch. 
+     * Used before the maze starts or when we resize the window.
+     */
     public void drawBackground() {
         if (bgImageCache == null) bgImageCache = loadImage("/Images/pitch.jpg");
         GraphicsContext gc = getGraphicsContext2D();
@@ -130,6 +138,10 @@ public class MazeDisplayer extends Canvas {
     public void setImageFileNameSolution(String v) { imageFileNameSolution.set(v); }
     public StringProperty imageFileNameSolutionProperty() { return imageFileNameSolution; }
 
+    /**
+     * A helper method to load images safely from the resources folder. 
+     * If it fails, it just returns null instead of crashing the game.
+     */
     private Image loadImage(String name) {
         if (name == null || name.isEmpty()) return null;
         try {
@@ -141,6 +153,10 @@ public class MazeDisplayer extends Canvas {
         return null;
     }
 
+    /**
+     * Checks if a specific cell should be visible or hidden by the fog of war. 
+     * It uses a simple radius around the character.
+     */
     private boolean isVisible(int row, int col) {
         return Math.abs(row - characterRow) <= FOG_RADIUS &&
                 Math.abs(col - characterCol) <= FOG_RADIUS;
@@ -157,6 +173,11 @@ public class MazeDisplayer extends Canvas {
         });
     }
 
+    /**
+     * This is the main drawing method. 
+     * It paints the background, walls, the solution path, the goal and the character. 
+     * It also handles the black fog of war overlay if it's turned on.
+     */
     private void drawMaze() {
         if (maze == null) return;
 

@@ -13,6 +13,11 @@ import javafx.scene.media.MediaPlayer;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * This is the main controller of the app. 
+ * It handles all the UI events, like button clicks and keyboard presses, 
+ * and tells the ViewModel what to do.
+ */
 public class MyViewController implements IView, Observer {
 
     @FXML private MazeDisplayer mazeDisplayer;
@@ -32,6 +37,10 @@ public class MyViewController implements IView, Observer {
         this.viewModel.addObserver(this);
     }
 
+    /**
+     * Hides the welcome screen and shows the game screen. 
+     * Also sets up some listeners to resize the maze when the window changes.
+     */
     @FXML
     public void startGame() {
         menuFile.setDisable(false);
@@ -52,6 +61,10 @@ public class MyViewController implements IView, Observer {
         });
     }
 
+    /**
+     * Asks the user for rows and columns, then asks the ViewModel to make a new maze. 
+     * It also starts playing the background music.
+     */
     @FXML
     public void generateMaze() {
         try {
@@ -101,6 +114,10 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Toggles the solution path. 
+     * If it's showing, it hides it. If it's hidden, it asks the ViewModel to solve it.
+     */
     @FXML
     public void solveMaze() {
         if (showSolution) {
@@ -112,6 +129,9 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * Catches keyboard presses and sends them to the ViewModel to move the player.
+     */
     @FXML
     public void keyPressed(KeyEvent event) {
         if (viewModel.getMaze() == null) return;
@@ -119,6 +139,10 @@ public class MyViewController implements IView, Observer {
         mazeDisplayer.requestFocus();
     }
 
+    /**
+     * Allows moving the character by dragging the mouse. 
+     * It calculates the direction based on where you drag.
+     */
     @FXML
     public void mouseDragged(javafx.scene.input.MouseEvent event) {
         if (viewModel.getMaze() == null) return;
@@ -275,6 +299,10 @@ public class MyViewController implements IView, Observer {
         }
     }
 
+    /**
+     * This method is called when the ViewModel changes something. 
+     * It updates the UI, redraws the maze, and checks if we won the game.
+     */
     @Override
     public void update(Observable o, Object arg) {
         Platform.runLater(() -> {

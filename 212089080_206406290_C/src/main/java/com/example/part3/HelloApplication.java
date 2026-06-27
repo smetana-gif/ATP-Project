@@ -15,8 +15,16 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.io.IoBuilder;
 import org.apache.logging.log4j.Level;
 
+/**
+ * The main application class that launches the JavaFX app. 
+ * It wires up the Model, View, and ViewModel together.
+ */
 public class HelloApplication extends Application {
 
+    /**
+     * Starts the primary stage, loads the FXML file, and connects our MVVM layers. 
+     * Also handles closing the app safely.
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/View/MyView.fxml"));        Parent root = fxmlLoader.load();
@@ -38,6 +46,11 @@ public class HelloApplication extends Application {
         primaryStage.show();
     }
 
+    /**
+     * The main entry point of the app. 
+     * It also intercepts the standard console output and error streams 
+     * to write them nicely to our custom logger.
+     */
     public static void main(String[] args) {
         org.apache.logging.log4j.Logger logger = org.apache.logging.log4j.LogManager.getLogger("ServerLogger");
 
@@ -78,6 +91,10 @@ public class HelloApplication extends Application {
         launch(args);
     }
 
+    /**
+     * Helper method to sort console prints into proper log levels 
+     * like INFO, WARN, ERROR, or FATAL based on the text.
+     */
     private static void processAndLog(String line, org.apache.logging.log4j.Logger logger) {
         String lower = line.toLowerCase();
 

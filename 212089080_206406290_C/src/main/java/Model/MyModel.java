@@ -15,6 +15,11 @@ import IO.MyCompressorOutputStream;
 import java.io.FileOutputStream;
 import java.io.FileInputStream;
 
+/**
+ * This is the concrete class of the model. 
+ * It handles the servers for generating and solving the maze. 
+ * It tells the ViewModel when things change.
+ */
 public class MyModel extends Observable implements IModel {
 
     private Maze maze;
@@ -24,6 +29,10 @@ public class MyModel extends Observable implements IModel {
     private Server mazeGeneratingServer;
     private Server solveSearchProblemServer;
 
+    /**
+     * Constructor that starts the servers. 
+     * One server is for making the maze, the other is for solving it.
+     */
     public MyModel() {
 
         mazeGeneratingServer =
@@ -68,6 +77,10 @@ public class MyModel extends Observable implements IModel {
         return characterCol;
     }
 
+    /**
+     * Connects to the server to get a new maze. 
+     * It sends the size, gets back compressed data, and decompresses it.
+     */
     @Override
     public void generateMaze(int rows, int cols) {
         new Thread(() -> {
@@ -112,6 +125,10 @@ public class MyModel extends Observable implements IModel {
         }).start();
     }
 
+    /**
+     * Connects to the solver server to find the path to the end. 
+     * It prints out the solution path steps when it receives it.
+     */
     @Override
     public void solveMaze() {
         if (maze == null) return;
@@ -149,6 +166,10 @@ public class MyModel extends Observable implements IModel {
         }).start();
     }
 
+    /**
+     * Updates the character's position. 
+     * It checks if the direction is allowed, like not walking through walls.
+     */
     @Override
     public void moveCharacter(int direction) {
         if (maze == null) return;
@@ -184,6 +205,9 @@ public class MyModel extends Observable implements IModel {
         }
     }
 
+    /**
+     * Stops the servers when we close the game.
+     */
     @Override
     public void shutDownServers() {
         if (mazeGeneratingServer != null)

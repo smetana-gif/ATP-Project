@@ -9,6 +9,10 @@ import javafx.scene.input.KeyCode;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * This class connects between the View and the Model. 
+ * It listens to changes in the model and updates its own properties so the View can see them.
+ */
 public class MyViewModel extends Observable implements Observer {
 
     private IModel model;
@@ -20,6 +24,10 @@ public class MyViewModel extends Observable implements Observer {
         this.model.assignObserver(this);
     }
 
+    /**
+     * This is called when the model changes. 
+     * We update our properties here and tell the View that something happened.
+     */
     @Override
     public void update(Observable o, Object arg) {
         if (o == model) {
@@ -62,6 +70,10 @@ public class MyViewModel extends Observable implements Observer {
         model.solveMaze();
     }
 
+    /**
+     * Takes a keyboard key and translates it to a direction number for the model. 
+     * Numpad and arrows are supported.
+     */
     public void moveCharacter(KeyCode code) {
         int direction = -1;
         switch (code) {
@@ -79,6 +91,10 @@ public class MyViewModel extends Observable implements Observer {
         }
     }
 
+    /**
+     * Moves the character using a direction number directly.
+     * Useful for mouse clicks.
+     */
     public void moveCharacterByDirection(int direction) {
         model.moveCharacter(direction);
     }
